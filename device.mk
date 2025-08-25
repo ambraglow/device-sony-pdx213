@@ -40,10 +40,6 @@ PRODUCT_COPY_FILES += \
     $(DEVICE_PATH)/vendor/etc/acdbdata/workspaceFile.qwsp:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/workspaceFile.qwsp \
     $(DEVICE_PATH)/vendor/etc/acdbdata/adsp_avs_config.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/adsp_avs_config.acdb
 
-# NFC Configuration
-PRODUCT_COPY_FILES += \
-    $(DEVICE_PATH)/vendor/etc/libnfc-nxp.conf:$(TARGET_COPY_OUT_VENDOR)/etc/libnfc-nxp.conf
-
 # Device Init
 PRODUCT_PACKAGES += \
     fstab.pdx213 \
@@ -72,7 +68,7 @@ PRODUCT_PROPERTY_OVERRIDES := \
 $(call inherit-product, device/sony/lena/platform.mk)
 
 # copy NFC firmware
-$(call inherit-product-if-exists, vendor/nxp/nxp-vendor.mk)
+#$(call inherit-product-if-exists, vendor/nxp/nxp-vendor.mk) move to lena
 
 # include board vendor blobs
 $(call inherit-product-if-exists, vendor/sony/lena-common/lena-partial.mk)
