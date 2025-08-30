@@ -15,8 +15,10 @@
 # Device path
 DEVICE_PATH := device/sony/pdx213/rootdir
 
-DEVICE_PACKAGE_OVERLAYS += \
-    device/sony/pdx213/overlay
+# overlays
+PRODUCT_PACKAGES += \
+    SonyPDX213FrameworksRes \
+    SonyPDX213SystemUIRes
 
 # Device Specific Permissions
 PRODUCT_COPY_FILES := \

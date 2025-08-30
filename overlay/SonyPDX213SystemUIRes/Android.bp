@@ -1,0 +1,4 @@
+runtime_resource_overlay {
+    name: "SonyPDX213SystemUIRes",
+    device_specific: true,
+}
