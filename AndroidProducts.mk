@@ -16,4 +16,6 @@ PRODUCT_MAKEFILES := $(LOCAL_DIR)/aosp_xqbt52.mk
 
 COMMON_LUNCH_CHOICES += \
     aosp_xqbt52-trunk_staging-eng \
-    aosp_xqbt52-trunk_staging-userdebug
+    aosp_xqbt52-trunk_staging-userdebug \
+    lineage_xqbt52-trunk_staging-userdebug \
+    lineage_xqbt52-trunk_staging-user
