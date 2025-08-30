@@ -12,8 +12,11 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-PRODUCT_MAKEFILES := $(LOCAL_DIR)/aosp_xqbt52.mk
+PRODUCT_MAKEFILES += $(LOCAL_DIR)/aosp_xqbt52.mk \
+                     $(LOCAL_DIR)/lineage_xqbt52.mk
 
 COMMON_LUNCH_CHOICES += \
     aosp_xqbt52-ap2a-eng \
     aosp_xqbt52-ap2a-userdebug \
+    lineage_xqbt52-userdebug \
+    lineage_xqbt52-user
